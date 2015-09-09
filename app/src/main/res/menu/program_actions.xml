@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AceCode="http://schemas.android.com/apk/res-auto">
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="0"
+        android:title="@string/action_search"
+        AceCode:showAsAction="ifRoom|collapseActionView"
+        AceCode:actionViewClass="android.support.v7.widget.SearchView"/>
+    <!-- Start, should appear as action button -->
+    <item android:id="@+id/action_start"
+        android:icon="@drawable/ic_play_arrow_white_24dp"
+        android:title="@string/action_start"
+        AceCode:showAsAction="always" />
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:showAsAction="never" />
+</menu>
